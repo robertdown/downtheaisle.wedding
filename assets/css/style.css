@@ -8,10 +8,11 @@
     --lightest: hsl(0,100%, 100%);
 
     --ff-cursive: 'Great Vibes', cursive;
+    --ff-serif: 'Playfair Display', serif;
 
     --fs-xl: clamp(5rem, 5vw + 1rem, 12rem);
     --fs-600: 300;
-    --fs-400: 1.125em;
+    --fs-400: clamp(1.6rem, 2rem, 8rem);
 }
 
 
@@ -23,6 +24,7 @@
 
 body {
     background-color: var(--darkest);
+    color: var(--lightest);
 }
 
 .container {
@@ -33,9 +35,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container h1 {
@@ -49,4 +53,11 @@ body {
 
 .container h1 span {
     padding-left: 12px;
+}
+
+.container p {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-400);
+    text-align: center;
+    margin-top: 1rem;;
 }
