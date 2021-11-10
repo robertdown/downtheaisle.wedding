@@ -1,0 +1,48 @@
+:root {
+    /* --dark: */
+    /* --darker: */
+    --darkest: rgb(0,0,0);
+
+    /* --light: */
+    /* --lighter: */
+    --lightest: hsl(0,100%, 100%);
+
+    --ff-cursive: 'Great Vibes', cursive;
+
+    --fs-xl: clamp(5rem, 5vw + 1rem, 12rem);
+    --fs-600: 300;
+    --fs-400: 1.125em;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--darkest);
+}
+
+.container {
+    background-image: url("../images/bg.jpg");
+    background-color: hsla(0, 0%, 00%, 0.6);
+    background-blend-mode: soft-light;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    display: inline-block;
+    font-size: var(--fs-xl);
+    font-family: var(--ff-cursive);
+    font-weight: 400;
+    color: var(--lightest);
+    text-align: center;
+}
