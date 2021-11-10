@@ -29,7 +29,7 @@ body {
 
 .container {
     background-image: url("../images/bg.jpg");
-    background-color: hsla(0, 0%, 00%, 0.6);
+    background-color: hsla(0, 0%, 00%, 0.20);
     background-blend-mode: soft-light;
     background-position: bottom;
     background-repeat: no-repeat;
