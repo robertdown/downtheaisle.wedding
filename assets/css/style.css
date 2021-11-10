@@ -46,3 +46,7 @@ body {
     color: var(--lightest);
     text-align: center;
 }
+
+.container h1 span {
+    padding-left: 12px;
+}
